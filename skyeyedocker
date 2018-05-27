@@ -1,0 +1,7 @@
+FROM python:3
+
+ADD skyeye.py /
+
+RUN pip3 install openalpr numpy cv2 faulthandler
+
+CMD [ "python", "./skyeye.py" ]
